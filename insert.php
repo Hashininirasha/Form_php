@@ -1,16 +1,13 @@
+<?php include 'connection.php';?>
+
 <!DOCTYPE html>
 <html>
 <body>
 
-<?php include 'connection.php';
+<title>Insert</title>
 
-
-
-
-
-?>
-
-
+</body>
+</html>
 
 
 

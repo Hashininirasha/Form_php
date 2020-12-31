@@ -2,13 +2,16 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Insert</title>
+</head>
 <body>
 
-<title>Insert</title>
+
 
 </body>
 </html>
-
+<? php mysqli_close() ?>
 
 
 

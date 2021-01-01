@@ -19,7 +19,8 @@
             echo "<pre>";
             print_r($show);
             echo "</pre><br>";
-
+            $fname=$show['First_Name'];
+            echo "$fname<br>";
             }
         }else{
             echo "No data found";

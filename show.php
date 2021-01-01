@@ -8,7 +8,13 @@
 <body>
     <?php 
         $query='SELECT * from user';
-        mysqli_query($con,$query);
+        $result=mysqli_query($con,$query);
+        if($result)
+        {
+            echo mysqli_num_rows($result);
+        }else{
+            echo "No data found";
+        }
     ?>
 
 </body>

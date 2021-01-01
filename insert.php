@@ -1,4 +1,4 @@
-<?php include 'connection.php';?>
+<?php include 'connection.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -6,7 +6,7 @@
     <title>Insert</title>
 </head>
 <body>
-    <? php 
+    <?php 
         if(isset($_POST['submit']))
         {
 
@@ -21,10 +21,11 @@
         if ($result)
         {
             echo "Record is added";
-        }else{
+        }
+        else{
             echo "Record is not added";
         }
-        }
+    }
 
     ?>
 
@@ -33,17 +34,11 @@
     Last Name : <input type="text" name="last_name"><br>
     Phone : <input type ="text" name="phone"><br>
     Pass Word : <input type="password" name="pw"><br>
-    <input type="submit" name="submit"><br>
+    <input type="Submit" name="submit"><br>
 
     </form>
 
 
 </body>
 </html>
-<? php mysqli_close($con); ?>
-
-
-
-
-
-
+<?php mysqli_close($con); ?>

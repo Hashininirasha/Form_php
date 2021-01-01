@@ -15,8 +15,8 @@
         $phone=$_POST['phone'];
         $pw=$_POST['pw'];
         $enpassword=sha1($pw);
-        echo "$fname $lname $phone $enpassword";
-        //$db="INSERT into user (First_Name,Last_Name,Phone,Password,Status) VALUES ()"
+        
+        $db="INSERT into user (First_Name,Last_Name,Phone,Password,Status) VALUES ('$fname','$lname','$phone','$enpassword',1)";
         }
 
     ?>

@@ -6,6 +6,19 @@
     <title>Insert</title>
 </head>
 <body>
+    <? php 
+        if(isset($_POST['submit']))
+        {
+
+        $fname=$_POST['first_name'];
+        $lname=$_POST['last_name'];
+        $phone=$_POST['phone'];
+        $pw=$_POST['pw'];
+        $db="INSERT into user (First_Name,Last_Name,Phone,Password,Status) VALUES ()"
+        }
+
+    ?>
+
     <form action ="insert.php" method="POST">
     First Name : <input type="text" name="first_name"><br>
     Last Name : <input type="text" name="last_name"><br>

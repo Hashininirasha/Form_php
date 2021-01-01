@@ -11,12 +11,12 @@
     $db="phpdb";
     $con=mysqli_connect($host,$userName,$password,$db);
     
-    if($con)
+    if(mysqli_connect_errno())
     {
-        echo "Can Access";
+        die ("Connection Unsuccessfull".mysqli_connect_error());
     }else
     {
-        echo "can't access";
+       // echo "can't access";
     }
 
 

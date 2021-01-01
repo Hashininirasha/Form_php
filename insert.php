@@ -16,7 +16,14 @@
         $pw=$_POST['pw'];
         $enpassword=sha1($pw);
         
-        $db="INSERT into user (First_Name,Last_Name,Phone,Password,Status) VALUES ('$fname','$lname','$phone','$enpassword',1)";
+        $dbquery="INSERT into user (First_Name,Last_Name,Phone,Password,Status) VALUES ('$fname','$lname','$phone','$enpassword',1)";
+        $result=mysqli_query($con,$dbquery);
+        if ($result)
+        {
+            echo "Record is added";
+        }else{
+            echo "Record is not added";
+        }
         }
 
     ?>

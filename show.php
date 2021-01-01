@@ -12,9 +12,15 @@
         if($result)
         {
             echo mysqli_num_rows($result);
-            $show=mysqli_fetch_assoc($result);
-    
+            
+            
+        while($show=mysqli_fetch_assoc($result))
+        {
+            echo "<pre>";
             print_r($show);
+            echo "</pre><br>";
+
+            }
         }else{
             echo "No data found";
         }
